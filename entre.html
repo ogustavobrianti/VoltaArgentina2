@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/bandeira.png">
+    <title>Argentina</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><img src="img/bandeira.png" width="110px" height="100px"></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="pergunta.html" class="nav-link">Fale Conosco</a></li>
+                    <li class="nav-item"><a href="entre.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="pergunta.html" class="nav-link">Cadastre-se</a></li>
+                <li class="nav-item"><a href="entre.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="ListarComentarios.php">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main> 
+        <form action="usuario-login.php" method="post">
+        <h2>Login</h2>
+        <div class="box-user">
+            <input type="text" name="nome" required>
+            <label>Usuário</label>
+        </div>
+        <div class="box-user">
+            <input type="password" name="senha" required>
+            <label>Senha</label>
+        </div>
+        <div>
+            <a href="#" class="forget"> Esqueceu a senha?</a>
+        </div>
+        <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <input type="submit" value="Enviar" />
+        </a>
+    </form>
+</main>
+</body>
+</html>
